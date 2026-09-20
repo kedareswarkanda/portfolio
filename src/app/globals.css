@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: #FF6B35;
+  --color-secondary: #444444;
+  --color-accent: #FF6B35;
+  --color-muted: var(--muted);
+  --color-soft-orange: var(--soft-orange);
+  --color-border-subtle: var(--card-border);
+
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-heading: var(--font-outfit), system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #111111;
+  --primary: #FF6B35;
+  --muted: #666666;
+  --soft-orange: #FFF1EB;
+  --card-bg: #FFFFFF;
+  --card-border: #EAEAEA;
+}
+
+.dark {
+  --background: #111111;
+  --foreground: #FFFFFF;
+  --primary: #FF6B35;
+  --muted: #A0A0A0;
+  --soft-orange: #1E1714;
+  --card-bg: #181818;
+  --card-border: #2A2A2A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 107, 53, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 107, 53, 0.7);
+}
+
+/* Editorial Minimal Cards */
+.editorial-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.editorial-card:hover {
+  border-color: #FF6B35;
+  background-color: var(--soft-orange);
+}
