@@ -43,7 +43,7 @@ export default function Hero() {
           {/* Name & Headline */}
           <div className="flex flex-col gap-2">
             <h1 className="font-heading text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-[#242124] dark:text-[#F5EBD0]">
-              KANDA <span className="text-[#7F011F] dark:text-[#F5EBD0] block sm:inline">KEDARESWAR</span>
+              KANDA <span className="text-[#7F011F] dark:text-[#E02653] block sm:inline">KEDARESWAR</span>
             </h1>
 
             <h2 className="font-heading text-xl sm:text-2xl lg:text-3xl font-extrabold text-[#4B0015] dark:text-[#F5EBD0]/90 leading-snug pt-1">

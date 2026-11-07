@@ -18,7 +18,8 @@ const navItems = [
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const isDark = (theme === "system" ? resolvedTheme : theme) === "dark";
   const [activeSection, setActiveSection] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -136,26 +137,49 @@ export default function Navbar() {
               <span>Resume</span>
             </a>
 
+            {/* Segmented Bright / Dark Mode Switcher */}
             {mounted && (
-              <button
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="h-9 w-9 flex items-center justify-center rounded-full border border-[#E6DCC7] dark:border-[#422631] hover:border-[#7F011F] text-[#77716D] dark:text-[#A89F9A] hover:text-[#7F011F] transition-colors bg-[#FFF9ED] dark:bg-[#321A23]"
-                aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
-              >
-                {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-              </button>
+              <div className="flex items-center p-1 rounded-full border border-[#E6DCC7] dark:border-[#422631] bg-[#FFF9ED] dark:bg-[#321A23] shadow-2xs">
+                <button
+                  type="button"
+                  onClick={() => setTheme("light")}
+                  className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer ${
+                    !isDark
+                      ? "bg-[#7F011F] text-[#F5EBD0] shadow-xs"
+                      : "text-[#77716D] dark:text-[#A89F9A] hover:text-[#242124] dark:hover:text-[#F5EBD0]"
+                  }`}
+                  aria-label="Bright Mode"
+                >
+                  <Sun className="h-3.5 w-3.5" />
+                  <span>Bright</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setTheme("dark")}
+                  className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer ${
+                    isDark
+                      ? "bg-[#7F011F] text-[#F5EBD0] shadow-xs"
+                      : "text-[#77716D] hover:text-[#242124]"
+                  }`}
+                  aria-label="Dark Mode"
+                >
+                  <Moon className="h-3.5 w-3.5" />
+                  <span>Dark</span>
+                </button>
+              </div>
             )}
           </div>
 
-          {/* Mobile Hamburger Toggle */}
+          {/* Mobile Hamburger Toggle & Compact Theme Button */}
           <div className="flex lg:hidden items-center gap-2.5">
             {mounted && (
               <button
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="h-9 w-9 flex items-center justify-center rounded-full border border-[#E6DCC7] dark:border-[#422631] text-[#77716D] dark:text-[#A89F9A]"
-                aria-label="Toggle Theme"
+                type="button"
+                onClick={() => setTheme(isDark ? "light" : "dark")}
+                className="h-9 w-9 flex items-center justify-center rounded-full border border-[#E6DCC7] dark:border-[#422631] bg-[#FFF9ED] dark:bg-[#321A23] text-[#7F011F] dark:text-[#F5EBD0]"
+                aria-label={`Switch to ${isDark ? "Bright" : "Dark"} Mode`}
               >
-                {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+                {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
               </button>
             )}
             <button
@@ -207,10 +231,72 @@ export default function Navbar() {
                 <Download className="h-4 w-4" />
                 <span>Download Resume</span>
               </a>
+
+              {/* Mobile Mode Switcher in Overlay */}
+              {mounted && (
+                <div className="mt-3 flex items-center p-1 rounded-full border border-[#E6DCC7] dark:border-[#422631] bg-[#FFF9ED] dark:bg-[#321A23] shadow-xs">
+                  <button
+                    type="button"
+                    onClick={() => setTheme("light")}
+                    className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${
+                      !isDark
+                        ? "bg-[#7F011F] text-[#F5EBD0] shadow-xs"
+                        : "text-[#77716D] dark:text-[#A89F9A]"
+                    }`}
+                  >
+                    <Sun className="h-3.5 w-3.5" />
+                    <span>Bright Mode</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setTheme("dark")}
+                    className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${
+                      isDark
+                        ? "bg-[#7F011F] text-[#F5EBD0] shadow-xs"
+                        : "text-[#77716D] dark:text-[#A89F9A]"
+                    }`}
+                  >
+                    <Moon className="h-3.5 w-3.5" />
+                    <span>Dark Mode</span>
+                  </button>
+                </div>
+              )}
             </nav>
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Floating Quick Mode Switcher (Visible on desktop at bottom-left) */}
+      {mounted && (
+        <aside className="fixed bottom-6 left-6 z-30 hidden lg:flex items-center" aria-label="Theme Switcher">
+          <div className="flex items-center p-1 rounded-full border border-[#E6DCC7] dark:border-[#422631] bg-[#FFF9ED]/95 dark:bg-[#24151A]/95 backdrop-blur-md shadow-lg">
+            <button
+              type="button"
+              onClick={() => setTheme("light")}
+              className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide transition-all cursor-pointer ${
+                !isDark
+                  ? "bg-[#7F011F] text-[#F5EBD0] shadow-xs"
+                  : "text-[#77716D] dark:text-[#A89F9A] hover:text-[#F5EBD0]"
+              }`}
+            >
+              <Sun className="h-3.5 w-3.5" />
+              <span>Bright</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setTheme("dark")}
+              className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide transition-all cursor-pointer ${
+                isDark
+                  ? "bg-[#7F011F] text-[#F5EBD0] shadow-xs"
+                  : "text-[#77716D] dark:text-[#A89F9A] hover:text-[#242124]"
+              }`}
+            >
+              <Moon className="h-3.5 w-3.5" />
+              <span>Dark</span>
+            </button>
+          </div>
+        </aside>
+      )}
     </>
   );
 }
