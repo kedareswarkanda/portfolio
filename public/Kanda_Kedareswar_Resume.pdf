@@ -1,101 +1,110 @@
 %PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 8 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+<<
+/BaseFont /Times-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Length 2431 >>
-stream
-BT
-/F1 18 Tf
-50 780 Td
-(KANDA KEDARESWAR) Tj
-/F1 10 Tf
-0 -18 Td
-(Nandyal, Andhra Pradesh, India | kandakedareswar@gmail.com | +91 9347651446) Tj
-0 -14 Td
-(GitHub: https://github.com/kedareswarkanda | LinkedIn: https://linkedin.com/in/kedareswarkanda) Tj
-0 -25 Td
-/F1 13 Tf
-(CAREER OBJECTIVE) Tj
-/F1 9 Tf
-0 -15 Td
-(Computer Science and Engineering undergraduate specializing in AI & ML, with a foundation in Python,) Tj
-0 -12 Td
-(Java, SQL, machine learning and web development. Hands-on experience building AI-powered applications.) Tj
-0 -22 Td
-/F1 13 Tf
-(EDUCATION) Tj
-/F1 9 Tf
-0 -15 Td
-(B.Tech in Computer Science and Engineering - AI & ML | Kalasalingam Academy of Research and Education) Tj
-0 -12 Td
-(Period: 2024 - 2028 | CGPA: 8.41) Tj
-0 -14 Td
-(Intermediate: SDRs Akanksha Junior College, MPC, Nandyal, AP | 2024 | 88.5%) Tj
-0 -12 Td
-(10th Class: Narayana Group of Schools, Kurnool, AP | 2022 | 74.13%) Tj
-0 -22 Td
-/F1 13 Tf
-(FEATURED PROJECTS) Tj
-/F1 9 Tf
-0 -15 Td
-(1. UniPulse - AI-Powered Academic & Career Guidance Platform (2026)) Tj
-0 -12 Td
-(   Centralized platform concept for academic resources, career roadmaps and certification discovery.) Tj
-0 -14 Td
-(2. Solar & Wind Deployment Intelligence Platform (Infosys Springboard Project)) Tj
-0 -12 Td
-(   Renewable-energy site assessment backend using solar, wind, terrain and infrastructure data.) Tj
-0 -14 Td
-(3. SolarIQ - AI Solar Panel Performance & Efficiency Optimizer) Tj
-0 -12 Td
-(   Full-stack solar analysis application combining physics-based calculations with XGBoost predictions.) Tj
-0 -22 Td
-/F1 13 Tf
-(TECHNICAL SKILLS) Tj
-/F1 9 Tf
-0 -15 Td
-(Programming: Python, Java (Basics), C (Basics) | Web: React, Next.js, HTML, CSS, JavaScript) Tj
-0 -12 Td
-(AI & ML: Supervised/Unsupervised Learning, Regression, Classification, Model Evaluation, NLP (TF-IDF), XGBoost) Tj
-0 -12 Td
-(Databases & Backend: SQL, Firebase, MongoDB, FastAPI, PostgreSQL | Tools: VS Code, GitHub, Google Colab) Tj
-0 -22 Td
-/F1 13 Tf
-(EXPERIENCE & ACHIEVEMENTS) Tj
-/F1 9 Tf
-0 -15 Td
-(ByteHearts: Full Stack Development Intern | Infosys Springboard: AI & ML Virtual Intern) Tj
-0 -12 Td
-(IKSC: Web Developer | Coding Blocks: Content Creator) Tj
-0 -14 Td
-(KRONE'26: Winner - National-Level Hackathon) Tj
-0 -12 Td
-(Publication: Automated System-based Attendance System - Journal: JETNR) Tj
-0 -12 Td
-(Certifications: Quantum Computing (IUCEE), Python (CodeTantra), DBMS & DAA (CodeChef)) Tj
-ET
-endstream
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
 endobj
 5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<<
+/A <<
+/S /URI /Type /Action /URI (mailto:kandakedareswar@gmail.com)
+>> /Border [ 0 0 0 ] /Rect [ 344.6935 725.6 459.7575 737 ] /Subtype /Link /Type /Annot
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/kedareswarkanda)
+>> /Border [ 0 0 0 ] /Rect [ 177.0945 713.1 288.691 724.5 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://linkedin.com/in/kedareswarkanda)
+>> /Border [ 0 0 0 ] /Rect [ 339.934 713.1 468.4215 724.5 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Times-Italic /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+9 0 obj
+<<
+/Annots [ 5 0 R 6 0 R 7 0 R ] /Contents 13 0 R /MediaBox [ 0 0 612 792 ] /Parent 12 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+10 0 obj
+<<
+/PageMode /UseNone /Pages 12 0 R /Type /Catalog
+>>
+endobj
+11 0 obj
+<<
+/Author (\(anonymous\)) /CreationDate (D:20261107111955+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261107111955+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+12 0 obj
+<<
+/Count 1 /Kids [ 9 0 R ] /Type /Pages
+>>
+endobj
+13 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 3102
+>>
+stream
+Gatm=>Bed^(4P_UfIq:mSOHfE)lA$$6:aF0-jA=rLV*m;5`KUUaEDTkFaj7)al\c90eLMi>-S[Jo^1DB0+_gV+#3f5#iKM++"dg1)l<ucY3!NB!57X/^YY+D8]QUPe&I/_X_HA9nf>G6[Q?K'NGo[Q8>(13M;Em[D9MWXr-CDZPFKke]E:++o?Oj)q;*"(LZo>:rWc2j4GN$J_7sVq\+JA"=)HR[$;;5?M<D@aEgg;GfO26Af-;u`Hl%Fa$nT0\GX/?\fH*H=g5a_S>2'bmP6t_(nL`M7Y73$lj&meYLC4@@qK;lY7DR$,`q)&&%Htb%Q(fs1FO&<7"8_PX;ZJ',aZm`JT^B6@h]o;is7DSe^*&D!koNWppM<S>9-:/0mkUVB=J:[sb'X9&;O_@`K3BKPZ'oNR:M[COUE7Okd^4$8$cUfJX^bQfDL4XXc'IJ!JmZpm--rabfuJ`6=n6Boca5/cm.=f;A_u3Zpliu.4N9>Vn_l9WH'651'HU<sA8La']P8BBX$!uXD`jKHbp.[]?#(bbAd"^+Y?KC>S`9sWc&U=oCK+Y1DR7\QEO7Gq\eq<X0ml0smWGH+DnV-P<T<e)[fuaXYhbVqWeKgVW#Z-p6TBa$^4pKe_"R^B9HR+5)'sRJ'MLj=ifF0Z$$u-)a,DGg0-QD>9J%u$F.+gS',GU<q#Btf4GJm=pk%fXN8oj'_3`n^DJ?VtD.(/XMXgKH4JMiVKn[H>BuX_c[hu6RQ&HZ$9cn$N-=6t:N>A!%+i-_B4O8P;arNp]UH.J!c!\g<R#jnXilm!)>YS"6F7sg01)N-[S;Xq,UXMG%j<IT>%Q$`[%h4QKlkIT%;gamDqS>il.Mj!!/V?I5+"YW6b6Ws]SDicrIY.0%qt(pHZYcW?iH>2V8YjN"QtMqcn@6>PTFW3*%?@h["19+;7Su">@\"Z%!?"LW^QCC<6I;-"L%<Z=/jsI)3h>S?<I)Ei]`ZROU<iSZ^NM]fro[_W\N5/OV6`,8(+Js("u@[u:uU(GDX$LL1-;h>/Asqtd+.S[3dpc*D?kCSNGNs8EruBW%2C]ghiF*\Jkh-d.p@R1^mLt^O5[+kDk7ateUT*.\:>_l%_c1ck\`>dS$mZVgHJqrT2.P&mcCD=&Jn\MX(P,]Ur'iPHcqSeXY8_p&TYAkpq)aE;7B^NPOic$*G"j?F@G.,?!AdXZ4Lio)Xp)-In:AT.MslT@M$p56U_-DpTHVPGjUZ#T<AKeI?2k\Bd-o,dHYG2r'RLJ)C#tLQ-9p/$'T<SV+;PEPH,PhISk@eOROjR,#5iD6*l[Dq79A'g7%Zq31ooU=2TKr1P!SAIk[8>*q-Kqa1P!RH`h!A7iH6O,LVW;.s=/3gmst_P_\MZHR+C&LKZuL\(]$0Uc[/N^1.4+hrTe(cr\]N!CE;M$J^hAnKc$!S8I5G)%EoUi!?QM..$*D6rC2MZRfGaJ!+:_Ic.3N\O_j.SF.02[Q%*"M4$4Ye/@P=dtL4^V3.9(!UPAp]Nc<a7]:k%`G,AM67_!?b;1TrH52NbAM3U5*.!8Fc=obq$CK6@J28,#ZZofQ!%_mCJh*]?D8<94Qh(%_QY;h17f<OM&3<FEcd`AQ-*pMnJD8p-oA:<kWX5^-o!\p'q&I3d]`h`=>RIA(S^-Lc\o"p>M-T-#@mbQoV%lZt[8Rgg9$RQtYZqhP`fi/IUIV<OM`WJYUr(ihFIZ/^]R)'456fQb.]ZUU^oiWE2eZ6qqrHDD@Pn(c4,R4eFhRL<p(OUp*_g'M@m8%(MWFn?1qL[JPr3_^-LoGr]8P2oQ=#t=T2T$FN<IKA;FOU-[44uK[H__$\r%:#H/%%gM#=P%ZAlTe8?7FaSFU6m8IBS%<P$Gk:J$C@[g+'DhSg!j2f^'QaW*)o-N1.[:J!U.BMu8QXD!]QJpkqn:d-S@Y-$A_gTL.;?]YC*)f%ad&=Q*`]<^4*?,Ju8=#?DgXD#]k>d+a\8n-,1-N`gfdd9RL2*n,Xdb72.ZG/3]8%Re5Zd"6Q%Z"&KG?c]_h4s4":kaT"SKil1L5=HYfm;(trg%Wuj+U1Y.81B1#g=Poo1d\8-^rKo/GiG5qMmCd8k.^24%GbTM8VBB@PN5*aD[u$UR#[d3EG6T<D8ZIkWICt9<)!d)shgP=\gK(S[C?fNu&-TVXcFaF`305Wn(?Kn@B_lP9=<?=0WH[WOlFWLE`@sWdJGEijC#J(%tRu&7N."%"JLJY%+^&cuZ"LmYWL]L'L,FmKB'2nXY2M\c.p)^Hph1,8t&pJsEo*gGZQf$U#(f-X=RP,i]KBLoTs]=qQ/ZeRW8!9#G8!>_l;la+^-"is"Ltr=K=`>;YAPWfjI7\un0GToF&r-Q]/-0GgQO%!A3q&gVcER^IIRGd[A:(PM'D#psujqId$Uo&t?11>=6bJ1PeL#cGjsKohA[Vk%J'$Z=^DB3H"sHW=3O;\m9PU1UGBcjcuqcYgKoA"3C'jS\s+@':@g:4)$[jJkG5+Q<"m*;.>MhQU3GBQWUlRhc2<3PMu55hCXF;=e+P;iK,`.V_.OBC#tPJh4#=Yt87>*tou_gfZqKAgF?N,8m7HF+Z&MnH;nsqMZ<+_$XbH\p&hW]W/XP;Zp_3HEXg4bu]5i/k8#CF[ARHqt/QL&>(MoXLe2/LDI6IrRGenN]),B6%a)\AU-9NY-rF@cE.99ql_ieT)T+_Z->[[cd:Et1,bT3@"h>hKlg_6"+>SOKA1^#qHd`cBm]9q%HcMdTJDEjs(9]]"m%b0NPFkDUDs4c#)`,hY3r,s,qNjR[6Doi%.@t!fljAedj@SKAuC"+msXNXp4cMjR\R'!KDshl[8#MD2XTY8iB9*g3EG[MW&\b8T81+0j3>pr1b)6*g+2)r6VFhY8_WmX"-7:Jo%Bm<po"cbSNN*uTps.B)iU_s(-3=Z7aYl`lhIPcLiD1>%`e5rK6F)pP#en!IdJe1^%&IZ;4>8.T-jP\%.kn?-Q%(5gAg)b+6ZJ6j>>0QW;OcSr&16+f`0[meY[fT<KAPagH7:sIM#4-0eEChOjK?XhRF>Te#jYk&NcqLLftL^5o\TgZ*uPY@-M&&ZD)UtIW*t?K5pu5Z'5UE@C3r0?*V@)o^M;KFN'GM~>endstream
 endobj
 xref
-0 6
+0 14
 0000000000 65535 f 
-0000000010 00000 n 
-0000000060 00000 n 
-0000000117 00000 n 
-0000000227 00000 n 
-0000000298 00000 n 
+0000000061 00000 n 
+0000000122 00000 n 
+0000000229 00000 n 
+0000000337 00000 n 
+0000000446 00000 n 
+0000000622 00000 n 
+0000000801 00000 n 
+0000000985 00000 n 
+0000001095 00000 n 
+0000001320 00000 n 
+0000001390 00000 n 
+0000001671 00000 n 
+0000001731 00000 n 
 trailer
-<< /Size 6 /Root 1 0 R >>
+<<
+/ID 
+[<299e4d493e0031134b2a3a8e1beefae5><299e4d493e0031134b2a3a8e1beefae5>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 11 0 R
+/Root 10 0 R
+/Size 14
+>>
 startxref
-368
+4925
 %%EOF
