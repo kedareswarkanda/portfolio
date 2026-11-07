@@ -24,12 +24,12 @@ export default function VisitorCounter() {
   };
 
   return (
-    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#FFF1EB] dark:bg-[#1E1714] border border-[#FF6B35]/20 select-none">
-      <Eye className="h-3.5 w-3.5 text-[#FF6B35] shrink-0" />
-      <span className="text-[10px] font-bold text-muted uppercase tracking-wider">
+    <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFF9ED] dark:bg-[#321A23] border border-[#E6DCC7] dark:border-[#422631] shadow-2xs select-none">
+      <Eye className="h-3.5 w-3.5 text-[#7F011F] shrink-0" />
+      <span className="text-[10px] font-bold text-[#77716D] dark:text-[#A89F9A] uppercase tracking-wider">
         System Visitors:
       </span>
-      <span className="font-mono text-xs font-black text-[#FF6B35] tracking-widest">
+      <span className="font-mono text-xs font-black text-[#7F011F] dark:text-[#F5EBD0] tracking-widest">
         {visitorCount !== null ? formatCount(visitorCount) : "------"}
       </span>
     </div>

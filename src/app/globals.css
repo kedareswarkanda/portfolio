@@ -3,35 +3,46 @@
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-primary: #FF6B35;
-  --color-secondary: #444444;
-  --color-accent: #FF6B35;
+  --color-primary: #7F011F;
+  --color-burgundy: #4B0015;
+  --color-sand: #F5EBD0;
+  --color-cream: #FFF9ED;
+  --color-charcoal: #242124;
   --color-muted: var(--muted);
-  --color-soft-orange: var(--soft-orange);
-  --color-border-subtle: var(--card-border);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-surface: var(--surface);
 
   --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
   --font-heading: var(--font-outfit), system-ui, -apple-system, sans-serif;
 }
 
 :root {
-  --background: #FFFFFF;
-  --foreground: #111111;
-  --primary: #FF6B35;
-  --muted: #666666;
-  --soft-orange: #FFF1EB;
-  --card-bg: #FFFFFF;
-  --card-border: #EAEAEA;
+  --background: #F5EBD0;
+  --foreground: #242124;
+  --primary: #7F011F;
+  --burgundy: #4B0015;
+  --sand: #F5EBD0;
+  --cream: #FFF9ED;
+  --charcoal: #242124;
+  --muted: #77716D;
+  --card-bg: #FFF9ED;
+  --card-border: #E6DCC7;
+  --surface: #FFF9ED;
 }
 
 .dark {
-  --background: #111111;
-  --foreground: #FFFFFF;
-  --primary: #FF6B35;
-  --muted: #A0A0A0;
-  --soft-orange: #1E1714;
-  --card-bg: #181818;
-  --card-border: #2A2A2A;
+  --background: #24151A;
+  --foreground: #F5EBD0;
+  --primary: #7F011F;
+  --burgundy: #4B0015;
+  --sand: #F5EBD0;
+  --cream: #321A23;
+  --charcoal: #F5EBD0;
+  --muted: #A89F9A;
+  --card-bg: #321A23;
+  --card-border: #422631;
+  --surface: #321A23;
 }
 
 html {
@@ -41,11 +52,11 @@ html {
 body {
   background-color: var(--background);
   color: var(--foreground);
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.25s ease, color 0.25s ease;
   overflow-x: hidden;
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar in Wine Red */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -56,22 +67,39 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 107, 53, 0.3);
+  background: rgba(127, 1, 31, 0.4);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 107, 53, 0.7);
+  background: rgba(127, 1, 31, 0.85);
 }
 
 /* Editorial Minimal Cards */
 .editorial-card {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
-  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .editorial-card:hover {
-  border-color: #FF6B35;
-  background-color: var(--soft-orange);
+  border-color: #7F011F;
+  box-shadow: 0 8px 24px rgba(127, 1, 31, 0.06);
+}
+
+.dark .editorial-card:hover {
+  border-color: #7F011F;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* Subtle Editorial Pill */
+.editorial-pill {
+  background-color: var(--cream);
+  border: 1px solid var(--card-border);
+}
+
+/* Keyboard focus states */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid #7F011F !important;
+  outline-offset: 2px;
 }

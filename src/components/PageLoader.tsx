@@ -10,7 +10,7 @@ export default function PageLoader() {
   useEffect(() => {
     let current = 0;
     const interval = setInterval(() => {
-      const increment = Math.floor(Math.random() * 12) + 5;
+      const increment = Math.floor(Math.random() * 14) + 6;
       current = Math.min(100, current + increment);
       setProgress(current);
 
@@ -18,9 +18,9 @@ export default function PageLoader() {
         clearInterval(interval);
         setTimeout(() => {
           setIsLoaded(true);
-        }, 300);
+        }, 220);
       }
-    }, 35);
+    }, 28);
 
     return () => clearInterval(interval);
   }, []);
@@ -29,42 +29,42 @@ export default function PageLoader() {
     <AnimatePresence>
       {!isLoaded && (
         <motion.div
-          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background"
+          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#F5EBD0] dark:bg-[#24151A]"
           initial={{ opacity: 1 }}
           exit={{
             opacity: 0,
-            transition: { duration: 0.4, ease: "easeOut" }
+            transition: { duration: 0.35, ease: "easeOut" }
           }}
         >
-          <div className="relative flex flex-col items-center gap-4">
-            {/* Logo */}
+          <div className="relative flex flex-col items-center gap-3">
+            {/* Logo Badge in Wine Red */}
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.3 }}
-              className="h-14 w-14 rounded-2xl bg-[#FF6B35] flex items-center justify-center text-white font-heading font-black text-xl shadow-md"
+              transition={{ duration: 0.25 }}
+              className="h-12 w-12 rounded-xl bg-[#7F011F] flex items-center justify-center text-[#F5EBD0] font-heading font-black text-lg shadow-sm"
             >
               KK
             </motion.div>
 
             {/* Title */}
             <div className="text-center mt-1">
-              <h2 className="font-heading text-sm font-bold tracking-widest text-foreground uppercase">
+              <h2 className="font-heading text-xs font-bold tracking-[0.2em] text-[#242124] dark:text-[#F5EBD0] uppercase">
                 KANDA KEDARESWAR
               </h2>
-              <p className="text-[10px] text-[#FF6B35] font-semibold uppercase tracking-widest mt-0.5">
+              <p className="text-[10px] text-[#7F011F] font-semibold uppercase tracking-[0.18em] mt-0.5">
                 AI & ML Undergraduate
               </p>
             </div>
 
             {/* Progress */}
-            <div className="flex flex-col items-center gap-2 mt-2 w-36">
-              <span className="font-mono text-2xl font-black text-foreground select-none">
+            <div className="flex flex-col items-center gap-2 mt-2 w-32">
+              <span className="font-mono text-xl font-black text-[#242124] dark:text-[#F5EBD0] select-none">
                 {progress}%
               </span>
-              <div className="relative h-1 w-full bg-[#EAEAEA] dark:bg-[#2A2A2A] rounded-full overflow-hidden">
+              <div className="relative h-1 w-full bg-[#E6DCC7] dark:bg-[#422631] rounded-full overflow-hidden">
                 <motion.div
-                  className="absolute top-0 left-0 h-full bg-[#FF6B35]"
+                  className="absolute top-0 left-0 h-full bg-[#7F011F]"
                   style={{ width: `${progress}%` }}
                 />
               </div>

@@ -17,36 +17,37 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Kanda Kedareswar | AI & ML Undergraduate",
+  title: "Kanda Kedareswar | AI & ML Developer",
   description:
-    "Kanda Kedareswar is an AI & ML undergraduate focused on machine learning, Python, data analysis and full-stack development.",
+    "Explore the portfolio of Kanda Kedareswar, a Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning, with projects in AI, full-stack development and intelligent applications.",
   keywords: [
     "Kanda Kedareswar",
-    "AI & ML Undergraduate",
+    "AI & ML Developer",
+    "Computer Science Undergraduate",
     "Machine Learning",
     "Python",
-    "Data Analysis",
-    "Full Stack Development",
+    "FastAPI",
+    "React",
+    "SolarIQ",
+    "UniPulse",
     "Kalasalingam Academy",
-    "Smart Borewell Starter",
-    "AI Academic & Career Navigator",
   ],
   authors: [{ name: "Kanda Kedareswar" }],
   creator: "Kanda Kedareswar",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://github.com/kedareswarkanda",
-    title: "Kanda Kedareswar | AI & ML Undergraduate",
+    url: "https://kedareswar-portfolio.vercel.app",
+    title: "Kanda Kedareswar | AI & ML Developer",
     description:
-      "Kanda Kedareswar is an AI & ML undergraduate focused on machine learning, Python, data analysis and full-stack development.",
+      "Explore the portfolio of Kanda Kedareswar, a Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning, with projects in AI, full-stack development and intelligent applications.",
     siteName: "Kanda Kedareswar Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kanda Kedareswar | AI & ML Undergraduate",
+    title: "Kanda Kedareswar | AI & ML Developer",
     description:
-      "Kanda Kedareswar is an AI & ML undergraduate focused on machine learning, Python, data analysis and full-stack development.",
+      "Explore the portfolio of Kanda Kedareswar, a Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning, with projects in AI, full-stack development and intelligent applications.",
   },
   robots: {
     index: true,
